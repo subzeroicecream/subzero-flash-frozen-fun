@@ -75,11 +75,13 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-ice': 'var(--gradient-ice)',
+				'gradient-warm': 'var(--gradient-warm)',
 			},
 			boxShadow: {
 				'premium': 'var(--shadow-premium)',
 				'glow': 'var(--shadow-glow)',
 				'ice': 'var(--shadow-ice)',
+				'warm': 'var(--shadow-warm)',
 			},
 			transitionTimingFunction: {
 				'premium': 'var(--transition-premium)',

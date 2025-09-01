@@ -20,8 +20,11 @@ import {
   Sparkles,
   Snowflake
 } from "lucide-react";
-import heroImage from "@/assets/hero-nitrogen-demo.jpg";
-import flavorImage from "@/assets/ice-cream-flavors.jpg";
+import subzeroHero1 from "@/assets/subzero-hero-1.jpg";
+import subzeroHero2 from "@/assets/subzero-hero-2.jpg";
+import subzeroFlavors from "@/assets/subzero-flavors.jpg";
+import subzeroNitrogen from "@/assets/subzero-nitrogen.jpg";
+import subzeroProcess from "@/assets/subzero-process-1.jpg";
 
 const Index = () => {
   return (
@@ -53,8 +56,8 @@ const Index = () => {
       <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-hero overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={heroImage} 
-            alt="Liquid nitrogen ice cream demonstration creating dramatic clouds of vapor"
+            src={subzeroHero1} 
+            alt="Sub Zero liquid nitrogen ice cream demonstration with dramatic vapor clouds"
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-hero/80"></div>
@@ -287,9 +290,9 @@ const Index = () => {
             
             <div className="relative">
               <img 
-                src={flavorImage} 
-                alt="Premium ice cream scoops in various colorful flavors with nitrogen vapor effects"
-                className="rounded-xl shadow-premium w-full"
+                src={subzeroFlavors} 
+                alt="Premium Sub Zero ice cream varieties with nitrogen vapor effects"
+                className="rounded-xl shadow-warm w-full"
               />
               <div className="absolute -top-4 -right-4 bg-brand-red text-white px-6 py-3 rounded-full shadow-glow">
                 <span className="font-nunito font-bold">50+ Flavors</span>
