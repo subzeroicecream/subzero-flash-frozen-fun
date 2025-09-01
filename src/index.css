@@ -40,11 +40,13 @@
 
     --radius: 0.75rem;
 
-    /* Sub Zero Premium Gradients - Warmer Tones */
+    /* Sub Zero Premium Gradients - Warmer Tones with Red Accents */
     --gradient-primary: linear-gradient(135deg, hsl(198, 86%, 46%), hsl(200, 88%, 70%));
-    --gradient-hero: linear-gradient(135deg, hsl(198, 86%, 46%) 0%, hsl(200, 88%, 60%) 50%, hsl(198, 86%, 46%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(198, 86%, 46%) 0%, hsl(350, 75%, 45%) 30%, hsl(198, 86%, 46%) 100%);
     --gradient-ice: linear-gradient(180deg, hsl(200, 88%, 97%) 0%, hsl(200, 88%, 94%) 100%);
     --gradient-warm: linear-gradient(135deg, hsl(198, 86%, 50%) 0%, hsl(350, 75%, 50%) 100%);
+    --gradient-red-accent: linear-gradient(135deg, hsl(350, 75%, 39%) 0%, hsl(350, 75%, 50%) 100%);
+    --gradient-red-warm: linear-gradient(135deg, hsl(350, 75%, 45%) 0%, hsl(198, 86%, 46%) 100%);
     
     /* Premium Shadows - Updated for warmer tones */
     --shadow-premium: 0 25px 50px -12px hsl(198, 86%, 46%, 0.25);

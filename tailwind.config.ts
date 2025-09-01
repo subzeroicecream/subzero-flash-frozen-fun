@@ -76,6 +76,8 @@ export default {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-ice': 'var(--gradient-ice)',
 				'gradient-warm': 'var(--gradient-warm)',
+				'gradient-red-accent': 'var(--gradient-red-accent)',
+				'gradient-red-warm': 'var(--gradient-red-warm)',
 			},
 			boxShadow: {
 				'premium': 'var(--shadow-premium)',

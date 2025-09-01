@@ -45,7 +45,7 @@ const Index = () => {
             <a href="#pricing" className="text-foreground hover:text-secondary transition-colors">Pricing</a>
             <a href="#testimonials" className="text-foreground hover:text-secondary transition-colors">Reviews</a>
           </nav>
-          <Button variant="hero" size="lg" className="shadow-glow">
+          <Button variant="redGradient" size="lg" className="shadow-glow">
             <Phone className="h-4 w-4 mr-2" />
             Book Your Event
           </Button>
@@ -96,7 +96,7 @@ const Index = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="xl" className="shadow-premium text-lg">
+            <Button variant="redGradient" size="xl" className="shadow-premium text-lg">
               <Zap className="h-5 w-5 mr-2" />
               Get Custom Quote
             </Button>
@@ -117,12 +117,13 @@ const Index = () => {
       </section>
 
       {/* Value Proposition */}
-      <section className="py-24 bg-gradient-ice">
+      <section className="py-24 bg-gradient-to-br from-background to-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-nunito font-black text-primary mb-4">
               Why Choose Sub Zero Catering?
             </h2>
+            <div className="w-24 h-1 bg-gradient-red-accent mx-auto mb-4 rounded-full"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We don't just serve ice cream – we create an unforgettable interactive experience 
               that combines premium quality with live entertainment.
@@ -132,7 +133,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center shadow-ice hover:shadow-premium transition-all duration-500 hover:-translate-y-2">
               <CardHeader className="pb-4">
-                <div className="mx-auto w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 bg-gradient-red-warm rounded-full flex items-center justify-center mb-4">
                   <Zap className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="text-xl font-nunito font-bold text-primary">Live Entertainment</CardTitle>
@@ -282,7 +283,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <Button variant="hero" size="lg" className="shadow-glow">
+              <Button variant="redGradient" size="lg" className="shadow-glow">
                 <Sparkles className="h-4 w-4 mr-2" />
                 View Full Menu
               </Button>
@@ -303,55 +304,58 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-24 bg-background">
-        <div className="container mx-auto px-4 text-center">
+      <section id="pricing" className="py-24 bg-gradient-to-br from-brand-red/5 to-secondary/50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-red-warm opacity-10"></div>
+        <div className="container mx-auto px-4 text-center relative">
           <h2 className="text-4xl md:text-5xl font-nunito font-black text-primary mb-6">
             Simple, Transparent Pricing
           </h2>
+          <div className="w-24 h-1 bg-gradient-red-accent mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-muted-foreground mb-16 max-w-3xl mx-auto">
             No hidden fees, no complicated packages. Just premium ice cream entertainment 
             at an unbeatable price point.
           </p>
 
-          <Card className="max-w-2xl mx-auto shadow-premium">
-            <CardHeader className="text-center pb-8">
+          <Card className="max-w-2xl mx-auto shadow-premium bg-white/95 backdrop-blur-sm border border-brand-red/20 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-red-accent opacity-10 rounded-bl-full"></div>
+            <CardHeader className="text-center pb-8 relative">
               <CardTitle className="text-3xl font-nunito font-black text-primary">Catering Package</CardTitle>
               <CardDescription className="text-lg">Everything you need for the perfect ice cream experience</CardDescription>
             </CardHeader>
-            <CardContent className="text-center">
+            <CardContent className="text-center relative">
               <div className="mb-8">
-                <span className="text-6xl font-nunito font-black text-primary">$6</span>
+                <span className="text-6xl font-nunito font-black text-brand-red">$6</span>
                 <span className="text-xl text-muted-foreground ml-2">per serving</span>
               </div>
               
               <div className="space-y-4 mb-8 text-left max-w-md mx-auto">
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                  <div className="w-2 h-2 bg-brand-red rounded-full flex-shrink-0"></div>
                   <span>Live liquid nitrogen demonstration</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                  <div className="w-2 h-2 bg-brand-red rounded-full flex-shrink-0"></div>
                   <span>Professional ice cream artisan</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                  <div className="w-2 h-2 bg-brand-red rounded-full flex-shrink-0"></div>
                   <span>All equipment and ingredients</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                  <div className="w-2 h-2 bg-brand-red rounded-full flex-shrink-0"></div>
                   <span>Multiple flavor and mix-in options</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                  <div className="w-2 h-2 bg-brand-red rounded-full flex-shrink-0"></div>
                   <span>No setup or delivery fees</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <CheckCircle className="h-5 w-5 text-secondary flex-shrink-0" />
+                  <div className="w-2 h-2 bg-brand-red rounded-full flex-shrink-0"></div>
                   <span>75 person minimum</span>
                 </div>
               </div>
 
-              <Button variant="hero" size="xl" className="w-full shadow-glow">
+              <Button variant="redGradient" size="xl" className="w-full shadow-glow">
                 <Phone className="h-5 w-5 mr-2" />
                 Book Your Event Today
               </Button>
@@ -413,53 +417,54 @@ const Index = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-4">
+      <section className="py-24 bg-gradient-red-warm relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-red/80 to-primary/60"></div>
+        <div className="container mx-auto px-4 relative">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-4xl md:text-5xl font-nunito font-black text-primary mb-6">
+              <h2 className="text-4xl md:text-5xl font-nunito font-black text-white mb-6">
                 Ready to Book Your 
                 <span className="text-secondary"> Unforgettable Event?</span>
               </h2>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-xl text-white/90 mb-8">
                 Get a custom quote for your event. We'll work with you to create the perfect 
                 ice cream experience for your guests.
               </p>
               
               <div className="space-y-6 mb-8">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
                     <Phone className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-nunito font-bold text-primary">Call Us</h4>
-                    <p className="text-muted-foreground">(555) 123-ZERO</p>
+                    <h4 className="font-nunito font-bold text-white">Call Us</h4>
+                    <p className="text-white/80">(555) 123-ZERO</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-nunito font-bold text-primary">Email Us</h4>
-                    <p className="text-muted-foreground">catering@subzero.com</p>
+                    <h4 className="font-nunito font-bold text-white">Email Us</h4>
+                    <p className="text-white/80">catering@subzero.com</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center flex-shrink-0">
                     <MapPin className="h-5 w-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-nunito font-bold text-primary">Service Area</h4>
-                    <p className="text-muted-foreground">50 mile radius from our locations</p>
+                    <h4 className="font-nunito font-bold text-white">Service Area</h4>
+                    <p className="text-white/80">50 mile radius from our locations</p>
                   </div>
                 </div>
               </div>
             </div>
             
-            <Card className="shadow-premium">
+            <Card className="shadow-premium bg-white/95 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-2xl font-nunito font-bold text-primary">Get Your Custom Quote</CardTitle>
                 <CardDescription>Tell us about your event and we'll create the perfect package</CardDescription>
@@ -527,7 +532,7 @@ const Index = () => {
                   />
                 </div>
                 
-                <Button variant="hero" size="lg" className="w-full shadow-glow">
+                <Button variant="redGradient" size="lg" className="w-full shadow-glow">
                   <Zap className="h-4 w-4 mr-2" />
                   Get My Custom Quote
                 </Button>
