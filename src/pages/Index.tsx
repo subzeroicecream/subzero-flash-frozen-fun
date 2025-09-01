@@ -20,11 +20,8 @@ import {
   Sparkles,
   Snowflake
 } from "lucide-react";
-import subzeroHero1 from "@/assets/subzero-hero-1.jpg";
-import subzeroHero2 from "@/assets/subzero-hero-2.jpg";
-import subzeroFlavors from "@/assets/subzero-flavors.jpg";
-import subzeroNitrogen from "@/assets/subzero-nitrogen.jpg";
-import subzeroProcess from "@/assets/subzero-process-1.jpg";
+import heroNitrogenDemo from "@/assets/hero-nitrogen-demo.jpg";
+import iceCreamFlavors from "@/assets/ice-cream-flavors.jpg";
 
 const Index = () => {
   return (
@@ -45,7 +42,7 @@ const Index = () => {
             <a href="#pricing" className="text-foreground hover:text-secondary transition-colors">Pricing</a>
             <a href="#testimonials" className="text-foreground hover:text-secondary transition-colors">Reviews</a>
           </nav>
-          <Button variant="redGradient" size="lg" className="shadow-glow">
+          <Button className="bg-brand-red hover:bg-brand-red/90 text-white" size="lg">
             <Phone className="h-4 w-4 mr-2" />
             Book Your Event
           </Button>
@@ -53,14 +50,14 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center bg-gradient-hero overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center bg-primary overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src={subzeroHero1} 
+            src={heroNitrogenDemo} 
             alt="Sub Zero liquid nitrogen ice cream demonstration with dramatic vapor clouds"
             className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-hero/80"></div>
+          <div className="absolute inset-0 bg-primary/80"></div>
         </div>
         
         <div className="relative z-10 text-center max-w-5xl mx-auto px-4">
@@ -96,10 +93,10 @@ const Index = () => {
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="redGradient" size="xl" className="shadow-premium text-lg">
-              <Zap className="h-5 w-5 mr-2" />
-              Get Custom Quote
-            </Button>
+          <Button className="bg-brand-red hover:bg-brand-red/90 text-white" size="xl">
+            <Zap className="h-5 w-5 mr-2" />
+            Get Custom Quote
+          </Button>
             <Button variant="outline-hero" size="xl" className="text-lg">
               <Clock className="h-5 w-5 mr-2" />
               See How It Works
@@ -117,13 +114,13 @@ const Index = () => {
       </section>
 
       {/* Value Proposition */}
-      <section className="py-24 bg-gradient-to-br from-background to-secondary/30">
+      <section className="py-24 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-nunito font-black text-primary mb-4">
               Why Choose Sub Zero Catering?
             </h2>
-            <div className="w-24 h-1 bg-gradient-red-accent mx-auto mb-4 rounded-full"></div>
+            <div className="w-24 h-1 bg-brand-red mx-auto mb-4 rounded-full"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               We don't just serve ice cream – we create an unforgettable interactive experience 
               that combines premium quality with live entertainment.
@@ -133,7 +130,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="text-center shadow-ice hover:shadow-premium transition-all duration-500 hover:-translate-y-2">
               <CardHeader className="pb-4">
-                <div className="mx-auto w-16 h-16 bg-gradient-red-warm rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 bg-brand-red rounded-full flex items-center justify-center mb-4">
                   <Zap className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="text-xl font-nunito font-bold text-primary">Live Entertainment</CardTitle>
@@ -148,7 +145,7 @@ const Index = () => {
 
             <Card className="text-center shadow-ice hover:shadow-premium transition-all duration-500 hover:-translate-y-2">
               <CardHeader className="pb-4">
-                <div className="mx-auto w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4">
                   <Award className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="text-xl font-nunito font-bold text-primary">Premium Quality</CardTitle>
@@ -163,7 +160,7 @@ const Index = () => {
 
             <Card className="text-center shadow-ice hover:shadow-premium transition-all duration-500 hover:-translate-y-2">
               <CardHeader className="pb-4">
-                <div className="mx-auto w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4">
                   <DollarSign className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="text-xl font-nunito font-bold text-primary">Cost Effective</CardTitle>
@@ -178,7 +175,7 @@ const Index = () => {
 
             <Card className="text-center shadow-ice hover:shadow-premium transition-all duration-500 hover:-translate-y-2">
               <CardHeader className="pb-4">
-                <div className="mx-auto w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-4">
+                <div className="mx-auto w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-4">
                   <CheckCircle className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="text-xl font-nunito font-bold text-primary">Zero Waste</CardTitle>
@@ -231,7 +228,7 @@ const Index = () => {
             ].map((item, index) => (
               <div key={index} className="text-center">
                 <div className="relative mb-6">
-                  <div className="mx-auto w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center shadow-glow">
+                  <div className="mx-auto w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-glow">
                     <span className="text-2xl font-nunito font-black text-white">{item.step}</span>
                   </div>
                   {index < 3 && (
@@ -247,7 +244,7 @@ const Index = () => {
       </section>
 
       {/* Flavors Section */}
-      <section id="flavors" className="py-24 bg-gradient-ice">
+      <section id="flavors" className="py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -283,7 +280,7 @@ const Index = () => {
                 </div>
               </div>
               
-              <Button variant="redGradient" size="lg" className="shadow-glow">
+              <Button className="bg-brand-red hover:bg-brand-red/90 text-white" size="lg">
                 <Sparkles className="h-4 w-4 mr-2" />
                 View Full Menu
               </Button>
@@ -291,7 +288,7 @@ const Index = () => {
             
             <div className="relative">
               <img 
-                src={subzeroFlavors} 
+                src={iceCreamFlavors} 
                 alt="Premium Sub Zero ice cream varieties with nitrogen vapor effects"
                 className="rounded-xl shadow-warm w-full"
               />
@@ -304,20 +301,19 @@ const Index = () => {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-24 bg-gradient-to-br from-brand-red/5 to-secondary/50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-red-warm opacity-10"></div>
+      <section id="pricing" className="py-24 bg-brand-red/5 relative overflow-hidden">
         <div className="container mx-auto px-4 text-center relative">
           <h2 className="text-4xl md:text-5xl font-nunito font-black text-primary mb-6">
             Simple, Transparent Pricing
           </h2>
-          <div className="w-24 h-1 bg-gradient-red-accent mx-auto mb-8 rounded-full"></div>
+          <div className="w-24 h-1 bg-brand-red mx-auto mb-8 rounded-full"></div>
           <p className="text-xl text-muted-foreground mb-16 max-w-3xl mx-auto">
             No hidden fees, no complicated packages. Just premium ice cream entertainment 
             at an unbeatable price point.
           </p>
 
           <Card className="max-w-2xl mx-auto shadow-premium bg-white/95 backdrop-blur-sm border border-brand-red/20 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-red-accent opacity-10 rounded-bl-full"></div>
+            <div className="absolute top-0 right-0 w-32 h-32 bg-brand-red/10 rounded-bl-full"></div>
             <CardHeader className="text-center pb-8 relative">
               <CardTitle className="text-3xl font-nunito font-black text-primary">Catering Package</CardTitle>
               <CardDescription className="text-lg">Everything you need for the perfect ice cream experience</CardDescription>
@@ -355,7 +351,7 @@ const Index = () => {
                 </div>
               </div>
 
-              <Button variant="redGradient" size="xl" className="w-full shadow-glow">
+              <Button className="bg-brand-red hover:bg-brand-red/90 text-white w-full" size="xl">
                 <Phone className="h-5 w-5 mr-2" />
                 Book Your Event Today
               </Button>
@@ -365,7 +361,7 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section id="testimonials" className="py-24 bg-gradient-ice">
+      <section id="testimonials" className="py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-nunito font-black text-primary mb-4">
@@ -417,8 +413,7 @@ const Index = () => {
       </section>
 
       {/* Contact Form */}
-      <section className="py-24 bg-gradient-red-warm relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-red/80 to-primary/60"></div>
+      <section className="py-24 bg-brand-red relative overflow-hidden">
         <div className="container mx-auto px-4 relative">
           <div className="grid lg:grid-cols-2 gap-16">
             <div>
@@ -532,7 +527,7 @@ const Index = () => {
                   />
                 </div>
                 
-                <Button variant="redGradient" size="lg" className="w-full shadow-glow">
+                <Button className="bg-white hover:bg-white/90 text-brand-red w-full" size="lg">
                   <Zap className="h-4 w-4 mr-2" />
                   Get My Custom Quote
                 </Button>
