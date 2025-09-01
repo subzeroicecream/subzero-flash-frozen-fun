@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'nunito': ['Nunito', 'sans-serif'],
+				'comfortaa': ['Comfortaa', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -31,6 +35,10 @@ export default {
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
+				},
+				'brand-red': {
+					DEFAULT: 'hsl(var(--brand-red))',
+					foreground: 'hsl(var(--brand-red-foreground))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -62,6 +70,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-ice': 'var(--gradient-ice)',
+			},
+			boxShadow: {
+				'premium': 'var(--shadow-premium)',
+				'glow': 'var(--shadow-glow)',
+				'ice': 'var(--shadow-ice)',
+			},
+			transitionTimingFunction: {
+				'premium': 'var(--transition-premium)',
+				'bounce-custom': 'var(--transition-bounce)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
